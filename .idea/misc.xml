@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/RAJ/AndroidStudioProjects/QuizzApp/app/src/main/res/drawable/dark_bg.xml" value="0.1" />
+        <entry key="..\:/Users/RAJ/AndroidStudioProjects/QuizzApp/app/src/main/res/drawable/image_cover.xml" value="0.1" />
         <entry key="..\:/Users/RAJ/AndroidStudioProjects/QuizzApp/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/RAJ/AndroidStudioProjects/QuizzApp/app/src/main/res/layout/fragment_details.xml" value="0.25" />
         <entry key="..\:/Users/RAJ/AndroidStudioProjects/QuizzApp/app/src/main/res/layout/fragment_list.xml" value="0.19" />

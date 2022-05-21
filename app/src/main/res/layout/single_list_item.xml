@@ -7,8 +7,9 @@
     android:layout_margin="16dp"
     android:background="@drawable/dark_bg">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/list_image"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
         android:layout_width="0dp"
         android:layout_height="256dp"
         android:scaleType="centerCrop"
@@ -19,27 +20,31 @@
 
     <TextView
         android:id="@+id/list_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/crimson_text"
         android:text="Quiz Title"
         android:textColor="@color/colorPrimary"
         android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_image" />
 
     <TextView
         android:id="@+id/list_desc"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/work_sans"
         android:text="Quiz Description"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_title" />
 
@@ -71,4 +76,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_difficulty"
         app:strokeColor="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/image_cover_view"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@drawable/image_cover"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

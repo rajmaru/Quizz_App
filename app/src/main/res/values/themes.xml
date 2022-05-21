@@ -13,9 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryDark</item>
         <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
     </style>
 
-    <style name="App.Button" parent="Widget.Material3.Button.OutlinedButton">
-
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
     </style>
+
 </resources>

@@ -33,14 +33,16 @@
 
     <TextView
         android:id="@+id/details_desc"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/work_sans"
         android:text="Quiz Description"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/details_title" />
 
@@ -49,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/work_sans"
         android:text="Diificulty"
         android:textColor="@color/colorLightText"
@@ -58,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/details_desc" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/details_questions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -71,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/details_difficulty" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/details_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -81,10 +83,10 @@
         android:scrollbarSize="16sp"
         android:text="Your Score"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/details_questions" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/details_difficulty_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -96,7 +98,7 @@
         app:layout_constraintTop_toTopOf="@+id/details_difficulty" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/details_questions_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -106,10 +108,10 @@
         android:textColor="@color/colorLightText"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/details_difficulty_text" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/details_score_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -119,10 +121,10 @@
         android:textColor="@color/colorLightText"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/details_questions_text" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/details_start_quiz_btn"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
